@@ -1,0 +1,98 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8e1; /* Light orange background */
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Change to inline-block for better control */
+    margin: 0 15px;
+    position: relative; /* Position relative for pseudo-element */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
+}
+
+nav ul li a {
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    padding: 10px 15px; /* Add padding for better click area */
+    display: block; /* Make the anchor fill the li */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+nav ul li:hover {
+    transform: scale(1.1); /* Scale up the li on hover */
+}
+
+nav ul li:hover a {
+    background-color: #ff5722; /* Darker orange background on hover */
+    color: #ffffff; /* Keep text color white */
+    border-radius: 5px; /* Rounded corners for the background */
+}
+header {
+    background: #ff9800; /* Orange header */
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    background-color: #ffffff; /* White background for the main section */
+    border-radius: 15px; /* Curved corners */
+    padding: 20px; /* Padding inside the main section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin: 20px; /* Margin around the main section */
+}
+
+h2 {
+    text-align: center; /* Center the heading */
+    color: #ff9800; /* Orange color for the heading text */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.polaroid {
+    background-color: #ffffff; /* White background for the polaroid */
+    border: 5px solid #ff9800; /* Orange border for the polaroid frame */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin: 15px; /* Space between polaroids */
+    padding: 10px; /* Padding around the image */
+    text-align: center; /* Center the caption */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.polaroid img {
+    width: 100%; /* Make the image fill the polaroid */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Slightly rounded corners for the image */
+}
+
+.polaroid:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.caption {
+    margin-top: 5px; /* Space between image and caption */
+    color: #ff5722; /* Darker orange color for the caption text */
+    font-weight: bold; /* Bold caption text */
+    font-size: 1.1em; /* Slightly larger font size for the caption */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #ff9800; /* Orange footer */
+    color: #ffffff;
+}
